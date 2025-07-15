@@ -414,15 +414,13 @@
   }
 
   nav {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start;
-    gap: 12px;
-    width: 100%;
-    scrollbar-width: none;
+    display: flex;
+    justify-content: center; /* Ini penting untuk meratakan ke tengah */
+    flex-wrap: wrap;         /* Supaya jika tidak cukup, turun ke bawah */
+    gap: 10px;
   }
 
- nav a {
+  nav a {
     font-size: 0.85em;
     white-space: nowrap;
     flex: 0 0 auto;
@@ -430,6 +428,7 @@
     background: white;
     color: var(--primary-color);
     border-radius: 8px;
+    text-align: center;
   }
 
   .cart-section {
